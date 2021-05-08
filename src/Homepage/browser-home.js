@@ -5,7 +5,15 @@ import Img from "./Homepage-1.png"
 import { Link } from "react-router-dom";
 
 export default function App() {
+
+    //State Variables
     const bg = useColorModeValue("gray.100", "#25282c");
+    // Variables used in Rendering
+    const data_1 = "Revolutionize your Game"
+    const data_2 = " using Data Analytics"
+    const quote = "\"He who can see the invisible can do the impossible\""
+    const author = "-FRANK L. GAINES"
+
     return (
         <chakra.div h={window.innerHeight} bg={bg}>
             <Box pos="relative" overflow="hidden" >
@@ -15,20 +23,22 @@ export default function App() {
                         pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
                         maxW={{ lg: "50%" }}
                         w={{ lg: "full" }}
-
                         bg={bg}
-                        border="solid 1px transparent"
-                    >
+                        border="solid 1px transparent">
                         <Box
                             mx="auto"
                             maxW={{ base: "7xl" }}
                             px={{ base: 4, sm: 6, lg: 8 }}
                             mt={{ base: 10, sm: 12, md: 16, lg: 20, xl: 28 }}>
+
                             <Box
                                 w="full"
                                 textAlign={{ sm: "center", lg: "left" }}
                                 justifyContent="center"
                                 alignItems="center">
+                                
+                                {/* Written Text <Big Size and Quote> */}
+
                                 <chakra.h1
                                     fontSize={{ base: "4xl", sm: "5xl", md: "6xl" }}
                                     letterSpacing="tight"
@@ -37,13 +47,13 @@ export default function App() {
                                     color={useColorModeValue("gray.800", "white")}>
 
                                     <chakra.span display={{ base: "block", xl: "inline" }}>
-                                        Revolutionize your Game
+                                        {data_1}
                                     </chakra.span>
                                     <chakra.span
                                         display={{ base: "block", xl: "inline" }}
                                         color={useColorModeValue("red.700", "red.400")}
                                     >
-                                        {" using Data Analytics"}
+                                        {data_2}
                                     </chakra.span>
                                 </chakra.h1>
                                 <chakra.p
@@ -54,7 +64,7 @@ export default function App() {
                                     fontStyle="oblique"
                                     color={useColorModeValue("black", "red.50")}
                                     fontSize="35px">
-                                    {"\"He who can see the invisible can do the impossible\""} <br></br>
+                                    {quote} <br></br>
                                 </chakra.p>
                                 <chakra.p
                                     mt={{ base: 3, sm: 5, md: 5 }}
@@ -64,15 +74,18 @@ export default function App() {
                                     fontStyle="normal"
                                     color={useColorModeValue("black", "red.50")}
                                     fontSize="25px">
-                                    {"-FRANK L. GAINES"} <br></br>
+                                    {author} <br></br>
                                 </chakra.p>
+                                
+                                {/* Big Buttons on Screen */}
+
                                 <Box
                                     mt={{ base: 5, sm: 8 }}
                                     display={{ sm: "flex" }}
                                     justifyContent={{ sm: "center", lg: "start" }}
                                     fontWeight="extrabold"
-                                    fontFamily="Comfortaa"
-                                >
+                                    fontFamily="Comfortaa">
+
                                     <Box rounded="full" shadow="md">
                                         <Link to="/demos">
                                             <chakra.button
@@ -142,8 +155,8 @@ export default function App() {
                     bottom={{ lg: 0 }}
                     right={{ lg: 0 }}
                     w={{ lg: "50%", md: "100%", sm: "100%" }}
-                    rounded="md"
-                >
+                    rounded="md">
+
                     <Image
                         h="full"
                         w="full"
@@ -152,8 +165,7 @@ export default function App() {
                         alt="Loading..."
                         loading="eager"
                         boxShadow="dark-lg"
-                        rounded="3xl"
-                    />
+                        rounded="3xl"/>
                 </Box>
             </Box>
         </chakra.div>

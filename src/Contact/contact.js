@@ -20,6 +20,9 @@ export default function Contact() {
     const [name, setName] = useState('')
     const [subject, setSubject] = useState('')
     const [content, setContent] = useState('')
+    const mail = "mailto: racket.technologies@gmail.com"
+    const github = "https://github.com/rack-tech"
+    const linkedin = "https://www.linkedin.com/company/del-ba-analytics/?viewAsMember=true"
 
     return (
         <chakra.div h={window.innerHeight} bg={bg}>
@@ -35,8 +38,7 @@ export default function Contact() {
                     marginTop="5%"
                     justify={'center'}
                     w='90%'
-                    flexWrap='wrap'
-                >
+                    flexWrap='wrap'>
                     <Stack
                         boxShadow={'lg'}
                         bg={useColorModeValue('white', 'gray.900')}
@@ -50,7 +52,6 @@ export default function Contact() {
 
                         <Stack align={'center'} spacing={2}>
                             <Heading
-                                // textTransform={'uppercase'}
                                 fontSize={'4xl'}
                                 fontFamily={"Comfortaa"}
                                 color={useColorModeValue('gray.800', 'gray.200')}>
@@ -100,7 +101,7 @@ export default function Contact() {
                                     outline: 'none',
                                 }}
                             />
-                            <a href={`mailto: racket.technologies@gmail.com?subject= ${subject} &body= Hello my name is ${name} and this is my feedback : ${content}`}>
+                            <a href={`${mail} = ${subject} &body= Hello my name is ${name} and this is my feedback : ${content}`}>
                                 <Button
                                     w='full'
                                     bg={'blue.400'}
@@ -130,7 +131,6 @@ export default function Contact() {
 
                         <Stack align={'center'} spacing={2}>
                             <Heading
-                                // textTransform={'uppercase'}
                                 fontSize={'4xl'}
                                 fontFamily={"Comfortaa"}
                                 color={useColorModeValue('gray.800', 'gray.200')}>
@@ -142,7 +142,7 @@ export default function Contact() {
                         </Stack>
                         <Stack spacing={2} direction={{ base: 'column', md: 'column' }} w='100%'>
                             <Center>
-                                <chakra.a w='full' href="https://www.linkedin.com/company/del-ba-analytics/?viewAsMember=true" >
+                                <chakra.a w='full' href={linkedin} >
                                     <Button border='solid'
                                         w={'full'}
                                         maxW={'md'}
@@ -155,7 +155,7 @@ export default function Contact() {
                                 </chakra.a>
                             </Center>
                             <Center>
-                                <chakra.a w='full' href="mailto: racket.technologies@gmail.com" >
+                                <chakra.a w='full' href={mail} >
                                     <Button border='solid'
                                         w={'full'}
                                         maxW={'md'}
@@ -168,7 +168,7 @@ export default function Contact() {
                                 </chakra.a>
                             </Center>
                             <Center>
-                                <chakra.a w='full' href="https://github.com/rack-tech">
+                                <chakra.a w='full' href={github}>
                                     <Button border='solid'
                                         w={'full'}
                                         maxW={'md'}

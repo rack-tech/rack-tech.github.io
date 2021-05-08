@@ -27,11 +27,12 @@ export default function AboutUs() {
     const content3 = " page."
 
     return (
-        <chakra.div h={window.innerHeight} bg={bg}>
+        <chakra.div h={window.outerHeight} bg={bg}>
             <Flex
                 direction='row'
                 // align={'center'}
                 justify={'center'}
+                minH={window.outerHeight}
                 bg={useColorModeValue('white', '#25282d')}>
                 <chakra.span
                     rounded='2xl'
@@ -39,16 +40,16 @@ export default function AboutUs() {
                     marginTop="5%"
                     justify={'center'}
                     w='90%'
-                    bg={useColorModeValue('gray.100', 'gray.900')}
-                >
+                    bg={useColorModeValue('gray.100', 'gray.900')}>
 
                     <Center>
                         <Text fontFamily={'Comfortaa'}
                             fontStyle={'bold'}
                             fontSize={'50px'}
-                            margin={10}
-                        >
+                            margin={10}>
+
                             {title}
+
                         </Text>
                     </Center>
 
@@ -56,8 +57,8 @@ export default function AboutUs() {
                         <chakra.p w='90%' alignContent='center'>
                             <Text fontFamily={'Zilla Slab'}
                                 fontStyle={'bold'}
-                                fontSize={'2xl'}
-                            >
+                                fontSize={'2xl'}>
+
                                 {content}
                                 <br></br>
                                 <br></br>
@@ -73,7 +74,6 @@ export default function AboutUs() {
                         </chakra.p>
                     </Center>
                 </chakra.span>
-
             </Flex>
         </chakra.div>)
 }
