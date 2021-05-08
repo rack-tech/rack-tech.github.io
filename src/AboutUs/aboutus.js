@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 export default function AboutUs() {
     const bg = useColorModeValue("gray.100", "#25282c");
     const title = "Our Story"
-    const content = "We are college batchmates Computer Sc. and Engg. of from Pune, India. " +
+    const content = "We are college batchmates of Computer Sc. and Engg. from Pune, India. " +
         "All of us love sports and want to see Indian athletes perform at Global Level. " +
         "We think that the most effective way is to improve standard of athletes is from the grassroot level, " +
         "hence we have come up with a solution that helps all athletes improve their game. " +
