@@ -56,9 +56,9 @@ export default function Team() {
 
     return (
         <chakra.div h={window.innerHeight} bg={bg}>
-            <Stack direction={["column", "row"]} 
-            marginLeft="5%" marginRight="5%" spacing={10} alignContent="center" alignItems="center">
-                
+            <Stack direction={["column", "row"]}
+                marginLeft="5%" marginRight="5%" spacing={10} alignContent="center" alignItems="center">
+
                 {
                     details.map((object) =>
                         <Center py={12}>
@@ -97,28 +97,28 @@ export default function Team() {
 
                                     <Stack direction={'row'} justify={'center'} spacing={6}>
                                         <Stack spacing={0} align={'center'}>
-                                            <a href={object.linkedin}>
-                                                <Button
-                                                    w={'full'}
-                                                    mt={8}
-                                                    bg={linkedin_bg_color}
-                                                    color={linkedin_text_color}
-                                                    rounded={'md'}>
+                                            <Button
+                                                w={'full'}
+                                                mt={8}
+                                                bg={linkedin_bg_color}
+                                                color={linkedin_text_color}
+                                                rounded={'md'}>
+                                                <a href={object.linkedin}>
                                                     LinkedIn
-                                    </Button>
-                                            </a>
+                                                    </a>
+                                            </Button>
                                         </Stack>
                                         <Stack spacing={0} align={'center'}>
-                                            <a href={object.github}>
-                                                <Button
-                                                    w={'full'}
-                                                    mt={8}
-                                                    bg={github_bg_color}
-                                                    color={github_text_color}
-                                                    rounded={'md'}>
+                                            <Button
+                                                w={'full'}
+                                                mt={8}
+                                                bg={github_bg_color}
+                                                color={github_text_color}
+                                                rounded={'md'}>
+                                                <a href={object.github}>
                                                     Github
-                                    </Button>
                                             </a>
+                                            </Button>
                                         </Stack>
                                     </Stack>
 
