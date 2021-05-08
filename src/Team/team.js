@@ -38,7 +38,7 @@ export default function Team() {
             img: Aniket
         },
         {
-            name: "Arya Bhivpathaki",
+            name: "Kohinoor Chaterjee",
             desg: "Expert in Algorithms, RackTech",
             linkedin: "https://www.linkedin.com/in/kohinoor-chatterjee-30732b15a/",
             github: "https://github.com/kohinoor98",
