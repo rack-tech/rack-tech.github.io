@@ -89,7 +89,6 @@ export default function Navbar() {
                                             <Link to={object.link}>
                                                 <MenuItem>
                                                     {object.text}
-                                                    {console.log(object)}
                                                 </MenuItem>
                                             </Link>
                                         )}
