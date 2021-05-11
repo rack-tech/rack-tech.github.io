@@ -40,6 +40,7 @@ export default function Navbar() {
         },
     ]
 
+
     var curr_color = useColorModeValue("gray.700", "gray.200")
 
     return (
@@ -68,7 +69,7 @@ export default function Navbar() {
                         </Box>
 
                         <Box
-                            display={{ md: 'none' }}>
+                            display={{ md: 'none'}}>
                             <Menu hidden={{ md: true, lg: true }}>
                                 <MenuButton
                                     px={4}
@@ -77,8 +78,8 @@ export default function Navbar() {
                                     borderRadius="lg"
                                     borderWidth="1px"
                                     color={useColorModeValue('#25282c', 'gray.100')}
-                                    _hover={{ bg: "gray.100" }}
-                                    _expanded={{ bg: "gray.300" }}
+                                    _hover={{ bg: "red.300" }}
+                                    _expanded={{ bg: "red.500" }}
                                     _focus={{ boxShadow: "outline" }}>
 
                                     <AiOutlineMenu />
