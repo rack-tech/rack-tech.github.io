@@ -27,6 +27,10 @@ export default function Navbar() {
             text: "Demos"
         },
         {
+            link: "/reports",
+            text: "Reports"
+        },
+        {
             link: "/team",
             text: "Team"
         },
@@ -37,7 +41,7 @@ export default function Navbar() {
         {
             link: "/contact",
             text: "Contact"
-        },
+        }
     ]
 
 

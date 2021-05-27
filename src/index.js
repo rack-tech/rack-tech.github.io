@@ -7,6 +7,7 @@ import Contact from "./Contact/contact"
 import Demos from "./Demos/demos"
 import AboutUs from "./AboutUs/aboutus"
 import Team from "./Team/team"
+import Reports from './Reports/reports'
 
 import './browser-home.css'
 
@@ -56,6 +57,9 @@ function LandingPage() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/reports">
+              <Reports />
             </Route>
             <Route path="/">
               <Homepage />
