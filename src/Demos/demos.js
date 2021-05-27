@@ -6,6 +6,7 @@ import CombinedShuttleTracking from './Shuttle-Tracking.mp4'
 import PlayerStats from './Player-Stats.mp4'
 import HitNoHit from './Hit-NoHit.mp4'
 import ShuttleTracking from './MS_video_output.mp4'
+import LiveStats from './Live-Stats.mp4'
 
 import '../browser-home.css'
 
@@ -35,6 +36,17 @@ export default function Demos() {
     };
 
     const videos = [
+        {
+            title: "Live Statistics Tracking",
+            src:    LiveStats,
+            content_title: "Live Statistics of Player movements and their hits",
+            content_technology: ["Deep Learning", "Computer Vision", "Pure Statistics"],
+            content: "We track player's movements and shot statistics in real time. We give live outputs of how many shots did the player play, " + 
+                "which kinds of shots are played, percentages of downward and upward shots and so on. It helps players and coaches to identify " + 
+                "potential patterns in play and work on them specifically. We also provide movement statistics for performance training coaches. " + 
+                "It is also helpful for players to identify who is putting in more effort and analyze intensity levels of the players throughout " + 
+                "the match. Have a look of our Sample Player reports to see how we provide statistics in the form of visual graphs."
+        },
         {
             title: "Machine looks for Shuttlecock",
             src: CombinedShuttleTracking,
