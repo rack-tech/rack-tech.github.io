@@ -42,7 +42,8 @@ export default function AboutUs() {
                     w='90%'
                     bg={useColorModeValue('gray.100', 'gray.900')}>
 
-                    <Center>
+                    {/** Center tag is used for aligning items in center */}
+                    <Center> 
                         <Text fontFamily={'Comfortaa'}
                             fontStyle={'bold'}
                             fontSize={'50px'}
