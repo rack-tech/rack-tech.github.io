@@ -8,6 +8,7 @@ import Demos from "./Demos/demos"
 import AboutUs from "./AboutUs/aboutus"
 import Team from "./Team/team"
 import Reports from './Reports/reports'
+import ProductLayout from './Products/layout';
 
 import './browser-home.css'
 
@@ -61,7 +62,10 @@ function LandingPage() {
             <Route path="/reports">
               <Reports />
             </Route>
-            <Route path="/">
+            <Route path="/products">
+              <ProductLayout/>
+            </Route>
+            <Route path="/" exact>
               <Homepage />
             </Route>
           </Switch>

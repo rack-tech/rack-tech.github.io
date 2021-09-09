@@ -14,8 +14,8 @@ import ToggleButton from '../Toggle-Color-mode/toggle-color-mode-button';
 
 export default function Navbar() {
     const bg = useColorModeValue("gray.200", "#25282c")
-    const brand_1 = "Rack"
-    const brand_2 = "Tech"
+    const brand_1 = "Reti"
+    const brand_2 = "culo"
 
     const nav_info = [
         {
@@ -34,6 +34,10 @@ export default function Navbar() {
             link: "/team",
             text: "Team"
         },
+        // {
+        //     link: "/products",
+        //     text: "Products"
+        // },
         {
             link: "/aboutus",
             text: "About Us"

@@ -5,9 +5,10 @@ import '../browser-home.css'
 import Arya from "./arya.jpeg"
 import Dev from "./dev.jpeg"
 import Aniket from "./aniket.jpeg"
-import Kohinoor from "./kohinoor.jpeg"
+import Raghav from "./raghav.jpeg"
 import Mitrajeet from "./mitrajeet.jpeg"
 import Vedant from "./vedant.jpeg"
+import Mandar from "./mandar.jpeg"
 import Bg from "./background.jpg"
 
 
@@ -20,45 +21,52 @@ export default function Team() {
     const details = [
         {
             name: "Arya Bhivpathaki",
-            desg: "Co-Founder and CEO of RackTech",
+            desg: "Co-Founder and CEO of Reticulo",
             linkedin: "https://www.linkedin.com/in/arya-bhivpathaki-27511216a/",
             github: "https://github.com/AryaB-1999",
             img: Arya
         },
         {
             name: "Devakanta Rao",
-            desg: "Co-Founder and CTO of RackTech",
+            desg: "Co-Founder and CTO of Reticulo",
             linkedin: "https://www.linkedin.com/in/devakanta-rao-8ab922117/",
             github: "https://github.com/dev681999",
             img: Dev
         },
         {
             name: "Aniket Velhankar",
-            desg: "AI & ML Tech Lead, RackTech",
+            desg: "AI & ML Tech Lead, Reticulo",
             linkedin: "https://www.linkedin.com/in/aniketvelhankar/",
             github: "https://github.com/AniketVelhankar",
             img: Aniket
         },
         {
-            name: "Kohinoor Chaterjee",
-            desg: "Expert in Algorithms, RackTech",
-            linkedin: "https://www.linkedin.com/in/kohinoor-chatterjee-30732b15a/",
-            github: "https://github.com/kohinoor98",
-            img: Kohinoor
+            name: "Raghav Khare",
+            desg: "Customer Discovery and Management, Reticulo",
+            linkedin: "https://in.linkedin.com/in/raghav-khare-7868201b5?trk=people-guest_people_search-card",
+            github: "",
+            img: Raghav
         },
         {
             name: "Mitrajeet Golsangi",
-            desg: "Summer Intern",
+            desg: "Summer Intern, Reticulo",
             linkedin: "https://www.linkedin.com/in/mitrajeet-golsangi-b939611ab/",
             github: "https://github.com/Mitrajeet-Golsangi",
             img: Mitrajeet
         },
         {
             name: "Vedant Gokhale",
-            desg: "Summer Intern",
+            desg: "Summer Intern, Reticulo",
             linkedin: "https://www.linkedin.com/in/Vedant-Gokhale",
             github: "https://github.com/gokhalevedant06",
             img: Vedant
+        },
+        {
+            name: "Mandar Ambulkar",
+            desg: "Summer Intern, Reticulo",
+            linkedin: "https://www.linkedin.com/in/mandar-ambulkar-419ab11ab/",
+            github: "",
+            img: Mandar
         }
     ]
 
@@ -80,12 +88,14 @@ export default function Team() {
                         details.map((object) =>
                             <Center py={12}>
                                 <Box
-                                    maxW={'400px'}
-                                    w={'400px'}
+                                    maxW={['90vw', '50vw', '30vw']}
+                                    w={['90vw', '50vw', '30vw']}
+                                    minH={'60vh'}
+                                    maxH={'80vh'}
                                     bg={bg_color}
                                     boxShadow={'2xl'}
                                     rounded={'md'}
-                                    overflow={'hidden'}>
+                                    overflow={'auto'}>
                                     <Image
                                         h={'200px'}
                                         w={'full'}
